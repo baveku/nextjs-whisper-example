@@ -24,8 +24,5 @@
     "tailwindcss": "^3.4.1",
     "eslint": "^8",
     "eslint-config-next": "15.0.1"
-  },
-  "patchedDependencies": {
-    "whisper-node@1.1.1": "patches/whisper-node@1.1.1.patch"
   }
 }
