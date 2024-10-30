@@ -2,11 +2,9 @@
 import {NextRequest, NextResponse} from "next/server";
 // eslint-disable-next-line @typescript-eslint/no-require-imports
 import { whispercpp, generateTranscription } from "modelfusion";
+console.log(process.env.WHISPER_API_URL)
 const api = whispercpp.Api({
-    baseUrl: {
-        host: "localhost",
-        port: "8080",
-    },
+    baseUrl: process.env.WHISPER_API_URL,
 });
 const whisper = whispercpp.Transcriber({
     api,
