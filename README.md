@@ -1,7 +1,15 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This is a [BituSTT Example](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 
+
+### Whisper.cpp
+Download model and save to models: [huggingface.co](https://huggingface.co/ggerganov/whisper.cpp/tree/main)
+```bash
+libs/whisper.cpp/server --models models/****.bin --convert
+```
+
+### Start Nextjs server
 First, run the development server:
 
 ```bash
